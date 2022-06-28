@@ -1,6 +1,6 @@
 # pages/views.py
-from django.http import HttpResponse
+from django.shortcuts import HttpResponse,render
 
 
 def homePageView(request):
-    return HttpResponse("Hello, World!")
+    return render(request,'idx.html')
